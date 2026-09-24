@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rani Malviya | Personal Portfolio</title>
+  
+  <style>
+    /* 1. Global Reset & Basic Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      color: #222222;
+      line-height: 1.6;
+    }
+
+    /* 2. Container (Centers and constrains content width) */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 3. Navigation Bar */
+    header {
+      background-color: #ffffff;
+      border-bottom: 2px solid #e1e8ed;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a365d;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #4a5568;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #2b6cb0;
+    }
+
+    /* 4. Hero Section */
+    .hero {
+      background-color: #ffffff;
+      padding: 50px 0;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      color: #1a202c;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #4a5568;
+      max-width: 650px;
+      margin: 0 auto 20px auto;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      margin: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background-color: #2b6cb0;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background-color: #edf2f7;
+      color: #2d3748;
+      border: 1px solid #cbd5e0;
+    }
+
+    /* 5. Common Section Styling */
+    section {
+      padding: 40px 0;
+    }
+
+    .section-title {
+      font-size: 22px;
+      color: #1a365d;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2b6cb0;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    /* 6. Skills Box */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-card {
+      background-color: #ffffff;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .skill-card h3 {
+      font-size: 16px;
+      color: #2b6cb0;
+      margin-bottom: 8px;
+    }
+
+    /* 7. Experience, Projects, Education Cards */
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      color: #2d3748;
+    }
+
+    .card .meta {
+      font-size: 14px;
+      color: #718096;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      margin-left: 20px;
+      color: #4a5568;
+      font-size: 15px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    /* 8. Footer */
+    footer {
+      background-color: #ffffff;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      padding: 25px 0;
+      color: #718096;
+      font-size: 14px;
+    }
+
+    /* Responsive Design (Mobile adjustments) */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links {
+        gap: 12px;
+      }
+      .hero h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container navbar">
+      <a href="#" class="logo">Rani Malviya</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero" id="about">
+    <div class="container">
+      <h1>Hi, I'm Rani Malviya</h1>
+      <p>
+        B.Tech Computer Science & Engineering student. Passionate about web development, 
+        tech communities, social media outreach, and event management.
+      </p>
+      <div class="contact-buttons">
+        <a href="mailto:ranimalviya1308@gmail.com" class="btn-primary">Email Me</a>
+        <a href="https://linkedin.com/in/rani-malviya-4a632037a" target="_blank" class="btn-secondary">LinkedIn</a>
+        <a href="https://github.com/ranimalviya1308-wq" target="_blank" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Web & Programming</h3>
+          <p>HTML5, CSS3, JavaScript, SQL, Java (Basics)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Community & Media</h3>
+          <p>Content Creation, Social Media Handling, Event Promotion</p>
+        </div>
+        <div class="skill-card">
+          <h3>Core Strengths</h3>
+          <p>Problem Solving, Teamwork, Communication, Organization</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Experience & Activities</h2>
+      
+      <div class="card">
+        <h3>Junior Software Developer Trainee</h3>
+        <p class="meta">NASSCOM Training | 2025</p>
+        <ul>
+          <li>Acquired structured technical skills within a professional training environment.</li>
+          <li>Worked on problem-solving methodologies and foundational software development workflows.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>ACM Student Member & Event Participant</h3>
+        <p class="meta">ACM-W Student Chapter, OIST</p>
+        <ul>
+          <li>Participated in TEDx, IEEE, and GDG events, gaining valuable networking experience.</li>
+          <li>Actively supported student-led events and outreach promotional campaigns.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Featured Project</h2>
+      <div class="card">
+        <h3>Personal Portfolio Website</h3>
+        <p class="meta">Tech Used: HTML5, CSS3, JavaScript</p>
+        <ul>
+          <li>Designed and developed a clean personal website to effectively showcase skills, education, and achievements.</li>
+          <li>Implemented a responsive, mobile-friendly layout using CSS Flexbox and Grid.</li>
+          <li>Focused on clean typography, accessibility, and high performance to ensure an intuitive user experience.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="section-title">Education & Achievements</h2>
+      <div class="card">
+        <h3>B.Tech - Computer Science & Engineering (2nd Year)</h3>
+        <p class="meta">Oriental Institute of Science and Technology, Bhopal (2025 - 2029)</p>
+        <ul>
+          <li>3rd Rank - CSE Department (1st Semester).</li>
+          <li>Finalist - Oriental TechHack 2.0 National Hackathon.</li>
+          <li>Cleared Smart India Hackathon (SIH) Internal College Round.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>School of Excellence, Betul</h3>
+        <p class="meta">Higher Secondary & High School</p>
+        <ul>
+          <li>Class XII: 90.8%</li>
+          <li>Class X: 95.8% (District Topper)</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Rani Malviya. Built with semantic HTML & CSS.</p>
+    </div>
+  </footer>
+
+  <!-- 5 lines of simple JS (Smooth Scroll helper) -->
+  <script>
+    // Smooth scrolling when clicking internal navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
